@@ -1,0 +1,690 @@
+<!doctype html>   
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+	<meta charset="utf-8">
+	<style>
+	.js #features {
+}
+.wowbook-zoomcontent{
+	zoom:1;
+
+
+	}
+	.modalDialog {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+
+	.modalDialog:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+
+	.modalDialog > div {
+		width: 800px;
+		position: relative;
+		margin: 3% auto;
+		padding: 7px 20px 13px 0px;
+	}
+
+	.close {
+		color: #FFFFFF;
+		line-height: 32px;
+		position: absolute;
+		right: 20px;
+		text-align: center;
+		top: 20px;
+		width: 32px;
+background: url(data:image/gif;base64,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);
+	}
+
+	
+
+	
+	
+</style>
+
+
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	   Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="images/icons/icon.ico" rel='SHORTCUT ICON'/> 
+	<title>Eos Magazine</title>
+	<meta name="description" content="">
+	<meta charset="utf-8">
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS : implied media="all" -->
+    <link rel="stylesheet" href="css/demo1.css">
+	<link rel="stylesheet" href="css/forkit.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="book/book.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/preview.css"><!-- Uncomment if you are specifically targeting less enabled mobile browsers
+	<link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+
+	<link href='//fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr-1.6.min.js"></script>
+
+
+
+
+<div class="thumbnail">
+
+
+<div style="position:relative;z-index:99;">
+    <table width="700px" border="0" align="center">
+  <tr>
+    <td>
+		<div style="margin:0 auto; width:86px; cursor:pointer;" id="thumbs" title="thumbnail">
+        <div class="thumbnail_hover"><img src="images/icons/thumbnail_hover.png" style="position:fixed; height:21px; margin-top:50px;">
+		</div>
+        </div>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div style="position:relative; z-index:10;">
+<table width="" border="0" align="center">
+  <tr>
+    <td>
+    <div class="header">
+
+    <img src="images/icons/atap.png" style="height:74px;">
+    </div>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div style="position:relative; z-index:99;">
+<div style="margin:0 auto; width:650px; z-index:120">
+<table width="0" border="0" align="center" style="position:fixed; margin-top:20px;">
+  <tr>
+    <td>
+<a class="facebook" href="https://www.facebook.com/EOSMAGZ" target="_blank" title='Fanpage'></a>
+    </td>
+        <td>
+
+<a class="twitter" href="https://www.twitter.com/EOSMAGZ" target="_blank" title='Follow'></a>
+
+    </td>
+        <td>
+
+<a class="download" href="book/eospage.pdf" download="EosMagzPages" title='unduh halaman'></a>
+
+    </td>
+  </tr>
+</table>
+</div>
+
+
+
+
+
+<div style="margin:0 auto; width:385px; z-index:120">
+<div style="float:right;">
+<table width="0" border="0" align="center" style="position:fixed; margin-top:20px;">
+  <tr>
+    <td>
+<a class="sound" href="#" onClick="aud_play_pause()" title='musik on/off'></a>
+    </td>
+            <td>
+<a class="autoflip" id='slideshow'  href="#" title='autoflip on/off'></a>
+    </td>
+        <td>
+<a class="help" href="#openModal" title='bantuan'></a>
+    </td>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+</head>
+<body>
+
+		<div class="forkit-curtain" style="z-index:999">
+			<div class="close-button"></div>
+
+        <div style="margin-top:-90px;"><object width="800" height="600" data="images/pages/tts.swf"></object></div>
+		</div>
+
+		<!-- The ribbon -->
+		<div style="position:relative; z-index:99;"><a class="forkit"  href="#"><img src="images/icons/tts.png"></a></div>
+
+		<script src="js/forkit.js"></script>
+
+
+
+<div class="awan1"></div>
+<div class="awan2"></div>
+<div class="awan3"></div>
+<div class="awan4"></div>
+
+
+
+
+
+
+
+
+
+
+<script>
+function aud_play_pause() {
+  var myAudio = document.getElementById("myAudio");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+</script>
+
+<audio control autoplay loop id="myAudio">
+  <source src="book/sound/music.ogg" type="audio/ogg">
+  <source src="book/sound/music.mp3" type="audio/mp3">
+</audio>
+<header>
+
+				<div class="header-right">
+					<div class="socials">
+					<a class="facebook-ico"></a>
+					<a class="twitter-ico"></a>
+					</div>
+				</div>
+                
+
+                
+                
+<div style="position:relative; z-index:99;">
+
+<table width="0"  border="0" style="margin-top:310px; float:left; margin-left:-100px;">
+  <tr>
+    <td><div class="tombol_kiri">
+<a id='back' class="sebelumnya" href="#" title='ke halaman sebelumnya'></a>
+</div></td>
+  </tr>
+  <tr>
+    <td><div class="tombol_kiri_a">
+<a id='first' class="pertama" href="#" title='ke halaman pertama'></a>
+</div></td>
+  </tr>
+</table>
+
+<table width="0"  border="0" style="margin-top:310px; float:right">
+  <tr>
+    <td><div class="tombol_kanan">
+<a id='next' class="selanjutnya" href="#" title='ke halaman selanjutnya'></a>
+</div></td>
+  </tr>
+  <tr>
+    <td><div class="tombol_kanan_a">
+<a id='last' class="terakhir" href="#" title='ke halaman terakhir'></a>
+</div></td>
+  </tr>
+</table>
+
+</div>
+
+
+
+</header>
+	<div id="container">
+
+        
+        
+        
+        
+        
+        
+	<div id="main">
+  		<div id='features'>
+        
+        
+			<div id='cover'>
+			
+            
+            <div class="cover_depan"></div>
+            <img src="images/pages/cover_tulisan.png" style="position:absolute; margin-top:240px; margin-left:120px; z-index:2">
+            
+            </div>
+
+
+
+			<div class='hal1'>
+
+			</div>
+            
+			<div class='hal2'>
+				
+            </div>
+            
+            
+
+
+			<div class='hal3'>
+
+			</div>
+			<div class='hal4'>
+
+			</div>
+            
+            
+
+
+			
+
+
+			<div class='hal5'>
+            
+            </p>
+			</div>
+            
+			<div class='hal6'>
+           
+			</div>
+            
+            
+
+
+			<div class='hal7'>
+
+			</div>
+			<div class='hal8'>
+
+			</div>
+            
+            
+
+
+			<div class='hal9'>
+
+			</div>
+            
+			<div class='hal10'>
+
+			</div>
+            
+            
+
+
+			<div class='hal11'>
+
+			</div>
+			<div class='hal12'>
+
+			</div>
+            
+            
+
+
+			<div class='hal13'>
+
+			</div>
+            
+			<div class='hal14'>
+					  	<iframe width="350" height="300"
+					src="http://www.youtube.com/embed/Pq8lp4zfvew">
+						</iframe>
+	    </div>
+            
+            
+
+
+			<div class='hal15'>
+
+			</div>
+			<div class='hal16'>
+
+			</div>
+            
+            
+
+
+
+			<div class='hal17'>
+
+			</div>
+            
+			<div class='hal18'>
+
+			</div>
+            
+            
+
+
+			<div class='hal19'>
+
+			</div>
+			<div class='hal20'>
+
+			</div>
+            
+            
+
+
+
+			<div class='hal21'>
+
+			</div>
+            
+			<div class='hal22'>
+
+			</div>
+            
+            
+
+
+			<div class='hal23'>
+
+			</div>
+			<div class='hal24'>
+
+			</div>
+            
+            
+
+
+
+			<div class='hal25'>
+
+			</div>
+            
+			<div class='hal26'>
+
+			</div>
+            
+            
+
+
+			<div class='hal27'>
+
+			</div>
+			<div class='hal28'>
+
+			</div>
+            
+            
+
+
+
+			<div class='hal29'>
+
+			</div>
+            
+			<div class='hal30'>
+
+			</div>
+            
+            
+
+
+			<div class='hal31'>
+
+			</div>
+			<div class='hal32'>
+
+			</div>
+            
+            
+
+
+
+			<div class='hal33'>
+
+			</div>
+            
+			<div class='hal34'>
+
+			</div>
+            
+            
+
+
+			<div class='hal35'>
+
+			</div>
+			<div class='hal36'>
+
+			</div>
+            
+            
+
+
+
+			<div class='hal37'>
+
+			</div>
+            
+			<div class='hal38'>
+
+			</div>
+            
+            
+
+
+			<div class='hal39'>
+
+			</div>
+			<div class='hal40'>
+
+			</div>
+            
+            
+            
+
+
+
+			<div id='back_cover'>
+			
+            <div class="back_cover_belakang"></div>
+            <img src="images/pages/back_cover_tulisan.png" style="position:absolute; margin-top:150px; margin-left:132px; z-index:2">
+            
+            </div>
+
+
+
+		</div> <!-- features -->
+
+	</div>
+	<div id='thumbs_holder'>
+	</div>
+    
+    
+    
+    
+    
+
+	
+    
+    
+    
+    
+    </div> <!--! end of #container -->
+</div>
+
+
+
+	<footer>
+    <div class="awanawan"></div>
+    <div class="bukit"></div>
+    <div class="bg"></div>
+
+
+    </footer>
+    
+    
+    
+    
+    
+<!-- Javascript at the bottom for fast page loading -->
+
+	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+	<script src="js/libs/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="./js/libs/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
+
+	<script type="text/javascript" src="book/book.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#features').wowBook({
+				 height : 600
+				,width  : 800
+				,centeredWhenClosed : true
+				,hardcovers : true
+				,hardPages : true
+				,pageNumbers : false
+				,flipSound : true
+				,turnPageDuration : 700
+				,numberedPages : [1,-2]
+				,controls : {
+						zoomIn    : '#zoomin',
+						zoomOut   : '#zoomout',
+						next      : '#next',
+						back      : '#back',
+						first     : '#first',
+						last      : '#last',
+						slideShow : '#slideshow',
+						flipSound : '#flipsound',
+						thumbnails : '#thumbs'
+					}
+				,scaleToFit: '#container'
+				,thumbnailsPosition : 'bottom'
+			}).css({'display':'none', 'margin':'auto'}).fadeIn(1000);
+
+			$("#cover").click(function(){
+				$.wowBook("#features").advance();
+			});
+
+			var book = $.wowBook("#features");
+
+			function rebuildThumbnails(){
+				book.destroyThumbnails()
+				book.showThumbnails()
+				$("#thumbs_holder").css("marginTop", -$("#thumbs_holder").height()/2)
+			}
+			$("#thumbs_position button").on("click", function(){
+				var position = $(this).text().toLowerCase()
+				if ($(this).data("customized")) {
+					position = "top"
+					book.opts.thumbnailsParent = "#thumbs_holder";
+				} else {
+					book.opts.thumbnailsParent = "body";
+				}
+				book.opts.thumbnailsPosition = position
+				rebuildThumbnails();
+			})
+			$("#thumb_automatic").click(function(){
+				book.opts.thumbnailsSprite = null
+				book.opts.thumbnailWidth = null
+				rebuildThumbnails();
+			})
+			$("#thumb_sprite").click(function(){
+				book.opts.thumbnailsSprite = "images/thumbs.jpg"
+				book.opts.thumbnailWidth = 136
+				rebuildThumbnails();
+			})
+			$("#thumbs_size button").click(function(){
+				var factor = 0.02*( $(this).index() ? -1 : 1 );
+				book.opts.thumbnailScale = book.opts.thumbnailScale + factor;
+				rebuildThumbnails();
+			})
+
+		});
+	</script>
+
+	<!-- scripts concatenated and minified via ant build script-->
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+	<!-- end concatenated and minified scripts-->
+
+	<!--[if lt IE 7 ]>
+	<script src="js/libs/dd_belatedpng.js"></script>
+	<script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+	<![endif]-->
+
+
+		<script src="js/forkit.js"></script>
+
+
+
+
+		<!-- Third party stuffs -->
+
+
+		
+
+		<script>
+		var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
+		(function(d, t) {
+		var g = d.createElement(t),
+		    s = d.getElementsByTagName(t)[0];
+		g.async = true;
+		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s);
+		})(document, 'script');
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="openModal" class="modalDialog">
+	<a href="#" title="Close" class="close">.</a>
+    <div>
+		
+<img src="images/pages/bantuan.jpg">
+	</div>
+</div>
+
+
+
+</body>
+</html>
