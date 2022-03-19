@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'BebasNeueRegular';
-  src: url('../fonts/BebasNeue-webfont.eot');
-  src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeue-webfont.woff') format('woff'), url('../fonts/BebasNeue-webfont.ttf') format('truetype'), url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+  src: url('https://github.com/tomtompil/madig_02/raw/main/fonts/BebasNeue-webfont.eot');
+  src: url('https://github.com/tomtompil/madig_02/raw/main/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('https://github.com/tomtompil/madig_02/raw/main/fonts/BebasNeue-webfont.woff') format('woff'), url('https://github.com/tomtompil/madig_02/raw/main/fonts/BebasNeue-webfont.ttf') format('truetype'), url('https://github.com/tomtompil/madig_02/raw/main/fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,12 +21,12 @@ height:100%;
   background: white;
 }
 .wowbook-left .wowbook-gutter-shadow {
-  background-image: url('../images/page_left_background.png');
+  background-image: url('https://raw.githubusercontent.com/tomtompil/madig_02/main/images/page_left_background.png');
   opacity: 0.5;
   width: 58px;
 }
 .wowbook-right .wowbook-gutter-shadow {
-  background-image: url('../images/page_right_background.png');
+  background-image: url('https://raw.githubusercontent.com/tomtompil/madig_02/main/images/page_right_background.png');
   background-position: 0 0;
 }
 body {
@@ -95,40 +95,40 @@ nav a {
   overflow: hidden;
 }
 nav #zoomin {
-  background-image: url(../images/icons/zoom_in.png);
+  background-image: url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/zoom_in.png);
 }
 nav #zoomout {
-  background-image: url(../images/icons/zoom_out.png);
+  background-image: url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/zoom_out.png);
 }
 nav #first {
-  background-image: url(../images/icons/arrow_double_left.png);
+  background-image: url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/arrow_double_left.png);
 }
 nav #last {
-  background-image: url(../images/icons/arrow_double_right.png);
+  background-image: url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/arrow_double_right.png);
 }
 nav #next {
-  background-image: url(../images/icons/arrow_right.png);
+  background-image: url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/arrow_right.png);
 }
 nav #back {
-  background-image: url(../images/icons/arrow_left.png);
+  background-image: url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/arrow_left.png);
 }
 nav #slideshow {
-  background-image: url(../images/icons/slideshow_play.png);
+  background-image: url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/slideshow_play.png);
 }
 nav #slideshow.wowbook-disabled {
-  background-image: url(../images/icons/slideshow_pause.png);
+  background-image: url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/icons/slideshow_pause.png);
 }
 nav #flipsound {
 	float:right;
 	margin-right:285px;
 	margin-top:-15px;
-  background-image: url(../images/icons/sound_on.png);
+  background-image: url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/sound_on.png);
 }
 nav #flipsound.wowbook-disabled {
-  background-image: url(../images/icons/sound_off.png);
+  background-image: url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/sound_off.png);
 }
 nav #thumbs {
-  background-image: url(../images/icons/thumbs.png);
+  background-image: url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/thumbs.png);
 }
 nav a:hover {
 
@@ -238,7 +238,7 @@ nav a {
   margin: 0;
 }
 .easy {
-  background: #ffffff url("../images/easy.png") no-repeat left top;
+  background: #ffffff url("https://raw.githubusercontent.com/tomtompil/madig_02/main/images/easy.png") no-repeat left top;
   background-size: 200% 100%;
   zoom: 1;
   ffont-size: 1.5em;
@@ -254,7 +254,7 @@ nav a {
 }
 .doc {
   display: none;
-  background: url("../images/doc_page.png");
+  background: url("https://raw.githubusercontent.com/tomtompil/madig_02/main/images/doc_page.png");
   font-size: 32px;
   line-height: 128px;
   width: 128px;
@@ -263,7 +263,7 @@ nav a {
   text-align: center;
 }
 .design {
-  background: #ffffff url("../images/design.png") no-repeat;
+  background: #ffffff url("https://raw.githubusercontent.com/tomtompil/madig_02/main/images/design.png") no-repeat;
   background-size: 200% 100%;
 }
 .design h1 {
@@ -358,7 +358,7 @@ nav a {
   width: 49%;
 }
 #zoom-feature {
-  background: #ffffff url("../images/zoom.jpg") no-repeat;
+  background: #ffffff url("https://raw.githubusercontent.com/tomtompil/madig_02/main/images/zoom.jpg") no-repeat;
   background-size: 200% 100%;
 }
 #zoom-feature h1 {
@@ -371,14 +371,14 @@ nav a {
 }
 #zoom-feature2 {
   background-color: white;
-  background-image: url("../images/zoom.jpg");
+  background-image: url("https://raw.githubusercontent.com/tomtompil/madig_02/main/images/zoom.jpg");
   background-size: 200% 100%;
   background-position: right top;
   background-repeat: no-repeat;
 }
 .deeplinking {
   color: white;
-  background: url("../images/chain.jpg") no-repeat;
+  background: url(".https://raw.githubusercontent.com/tomtompil/madig_02/main/images/chain.jpg") no-repeat;
   background-size: 200% 100%;
 }
 .deeplinking h1 {
@@ -395,7 +395,7 @@ nav a {
   background-position: top right;
 }
 .wowbook-page .feature.numbering {
-  background: url("../images/numbering.png") #ffffff no-repeat;
+  background: url("https://raw.githubusercontent.com/tomtompil/madig_02/main/images/numbering.png") #ffffff no-repeat;
   background-size: 100% 100%;
 }
 .wowbook-page .feature.numbering h1 {
@@ -424,7 +424,7 @@ nav a {
   text-align: center;
 }
 .wowbook-page .feature.flash {
-  background: url("../images/flash.png") #ffffff no-repeat;
+  background: url("https://raw.githubusercontent.com/tomtompil/madig_02/main/images/flash.png") #ffffff no-repeat;
   background-size: 200% 100%;
   padding-top: 42%;
   /* 170px/400px */
@@ -438,7 +438,7 @@ nav a {
   display: none;
 }
 .feature.flash-demo {
-  background: url("../images/flash.png") #ffffff no-repeat;
+  background: url("https://raw.githubusercontent.com/tomtompil/madig_02/main/images/flash.png") #ffffff no-repeat;
   background-position: top right;
   background-size: 200% 100%;
   padding-top: 25%;
@@ -447,7 +447,7 @@ nav a {
   font-size: 1.2em;
 }
 .more {
-  background: url("../images/more.png") #ffffff no-repeat;
+  background: url("https://raw.githubusercontent.com/tomtompil/madig_02/main/images/more.png") #ffffff no-repeat;
   background-size: 200% 100%;
   padding-top: 30px;
 }
@@ -468,12 +468,12 @@ nav a {
 
 
 #cover {
-  background:url(../images/pages/cover.jpg);
+  background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/cover.jpg);
 }
 .cover_depan{
 	position:absolute;
 	z-index:1;
-	background:url(../images/pages/cover_depan.png);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/cover_depan.png);
 	height:370px;
 	width:369px;
 	margin-top:100px;
@@ -502,196 +502,196 @@ nav a {
 
 
 .hal1{
-	background:url(../images/pages/1-2.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/1-2.jpg);
 	}
 	
 .hal2{
-	background:url(../images/pages/1-2.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/1-2.jpg);
 	background-position:right 0;
 	
 	}	
 
 
 .hal3{
-	background:url(../images/pages/3-4.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/3-4.jpg);
 	}
 
 .hal4{
-	background:url(../images/pages/3-4.jpg);
+	background:url(.https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/3-4.jpg);
 	background-position:right 0;
 	}
 
 .hal5{
-	background:url(../images/pages/5-6.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/5-6.jpg);
 	}
 	
 .hal6{
-	background:url(../images/pages/5-6.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/5-6.jpg);
 	background-position:right 0;
 	}
 	
 .hal7{
-	background:url(../images/pages/7-8.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/7-8.jpg);
 	}
 	
 .hal8{
-	background:url(../images/pages/7-8.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/7-8.jpg);
 	background-position:right 0;
 	}
 	
 .hal9{
-	background:url(../images/pages/9-10.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/9-10.jpg);
 	}	
 	
 .hal10{
-	background:url(../images/pages/9-10.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/9-10.jpg);
 	background-position:right 0;
 	}
 	
 .hal11{
-	background:url(../images/pages/11-12.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/11-12.jpg);
 	}
 	
 .hal12{
-	background:url(../images/pages/11-12.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/11-12.jpg);
 	background-position:right 0;
 	}	
 	
 .hal13{
-	background:url(../images/pages/13-14.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/13-14.jpg);
 	}
 
 .hal14{
-	background:url(../images/pages/13-14.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/13-14.jpg);
 	background-position:right 0;
 	}	
 	
 .hal15{
-	background:url(../images/pages/15-16.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/15-16.jpg);
 	}
 	
 .hal16{
-	background:url(../images/pages/15-16.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/15-16.jpg);
 	background-position:right 0;
 	}
 
 .hal17{
-	background:url(../images/pages/17-18.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/17-18.jpg);
 	}
 	
 .hal18{
-	background:url(../images/pages/17-18.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/17-18.jpg);
 	background-position:right 0;
 	}	
 	
 	
 .hal19{
-	background:url(../images/pages/19-20.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/19-20.jpg);
 	}
 	
 .hal20{
-	background:url(../images/pages/19-20.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/19-20.jpg);
 	background-position:right 0;
 	}
 	
 .hal21{
-	background:url(../images/pages/21-22.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/21-22.jpg);
 	}
 	
 .hal22{
-	background:url(../images/pages/21-22.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/21-22.jpg);
 	background-position:right 0;
 	}
 	
 .hal23{
-	background:url(../images/pages/23-24.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/23-24.jpg);
 	}
 	
 .hal24{
-	background:url(../images/pages/23-24.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/23-24.jpg);
 	background-position:right 0;
 	}
 	
 .hal25{
-	background:url(../images/pages/25-26.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/25-26.jpg);
 	}
 	
 .hal26{
-	background:url(../images/pages/25-26.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/25-26.jpg);
 	background-position:right 0;
 	}
 	
 .hal27{
-	background:url(../images/pages/27-28.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/27-28.jpg);
 	}
 	
 .hal28{
-	background:url(../images/pages/27-28.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/27-28.jpg);
 	background-position:right 0;
 	}
 	
 .hal29{
-	background:url(../images/pages/29-30.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/29-30.jpg);
 	}
 	
 .hal30{
-	background:url(../images/pages/29-30.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/29-30.jpg);
 	background-position:right 0;
 	}
 	
 .hal31{
-	background:url(../images/pages/31-32.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/31-32.jpg);
 	}
 	
 .hal32{
-	background:url(../images/pages/31-32.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/31-32.jpg);
 	background-position:right 0;
 	}
 	
 .hal33{
-	background:url(../images/pages/33-34.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/33-34.jpg);
 	}
 	
 .hal34{
-	background:url(../images/pages/33-34.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/33-34.jpg);
 	background-position:right 0;
 	}
 	
 .hal35{
-	background:url(../images/pages/35-36.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/35-36.jpg);
 	}
 	
 .hal36{
-	background:url(../images/pages/35-36.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/35-36.jpg);
 	background-position:right 0;
 	}
 	
 .hal37{
-	background:url(../images/pages/37-38.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/37-38.jpg);
 	}
 	
 .hal38{
-	background:url(../images/pages/37-38.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/37-38.jpg);
 	background-position:right 0;
 	}
 	
 .hal39{
-	background:url(../images/pages/39-40.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/39-40.jpg);
 	}
 	
 .hal40{
-	background:url(../images/pages/39-40.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/39-40.jpg);
 	background-position:right 0;
 	}
 	
 #back_cover {
-	background:url(../images/pages/back_cover.jpg);
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/back_cover.jpg);
 }	
 
 .back_cover_belakang{
 	position:absolute;
 	z-index:1;
-	background:url(../images/pages/back_cover_belakang.png) no-repeat;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/pages/back_cover_belakang.png) no-repeat;
 	height:370px;
 	width:369px;
 	margin-top:10px;
@@ -734,7 +734,7 @@ nav a {
 	
 	
 .tombol_kanan a{
-	background:url(../images/icons/next.png) no-repeat 0 0;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/next.png) no-repeat 0 0;
 	background-size:70px;
 	width: 70px; height: 83px;  
 	font-size: 0; 
@@ -758,7 +758,7 @@ nav a {
 
 
 .tombol_kanan_a a{
-	background:url(../images/icons/last.png) no-repeat 0 0;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/last.png) no-repeat 0 0;
 	background-size:70px;
 	width: 70px; height: 83px;  
 	font-size: 0; 
@@ -781,7 +781,7 @@ nav a {
 
 
 .tombol_kiri a{
-	background:url(../images/icons/back.png) no-repeat 0 0;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/back.png) no-repeat 0 0;
 	background-size:70px;
 	width: 70px; height: 83px;  
 	font-size: 0; 
@@ -805,7 +805,7 @@ nav a {
 
 
 .tombol_kiri_a a{
-	background:url(../images/icons/first.png) no-repeat 0 0;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/first.png) no-repeat 0 0;
 	background-size:70px;
 	width: 70px; height: 83px;  
 	font-size: 0; 
@@ -828,7 +828,7 @@ nav a {
 
 
 .facebook{
-	background:url(../images/icons/facebook.png) no-repeat 0 0;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/facebook.png) no-repeat 0 0;
 		background-size:35px;
 	width: 35px; height: 35px;  
 	font-size: 0; 
@@ -845,7 +845,7 @@ nav a {
 	}
 	
 .twitter{
-	background:url(../images/icons/twitter.png) no-repeat 0 0;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/twitter.png) no-repeat 0 0;
 		background-size:35px;
 	width: 35px; height: 35px;  
 	font-size: 0; 
@@ -863,7 +863,7 @@ nav a {
 	}
 	
 .download{
-	background:url(../images/icons/download.png) no-repeat 0 0;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/download.png) no-repeat 0 0;
 		background-size:35px;
 	width: 35px; height: 35px;  
 	font-size: 0; 
@@ -880,7 +880,7 @@ nav a {
 	}
 
 .sound{
-	background:url(../images/icons/sound.png) no-repeat 0 0;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/sound.png) no-repeat 0 0;
 	background-size:35px;
 	width: 35px; height: 35px;  
 	font-size: 0; 
@@ -898,7 +898,7 @@ nav a {
 
 
 .autoflip{
-	background:url(../images/icons/autoflip.png) no-repeat 0 0;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/autoflip.png) no-repeat 0 0;
 	background-size:35px;
 	width: 35px; height: 35px;  
 	font-size: 0; 
@@ -915,7 +915,7 @@ nav a {
 	}
 	
 .help{
-	background:url(../images/icons/help.png) no-repeat 0 0;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/icons/help.png) no-repeat 0 0;
 	background-size:35px;
 	width: 35px; height: 35px;  
 	font-size: 0; 
@@ -961,7 +961,7 @@ opacity: 1;
 
 
 .awan1{
-			background:url(../images/awan3.png) no-repeat;
+			background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/awan3.png) no-repeat;
 			position:absolute;
 			right:0;
 			top:0;
@@ -1001,7 +1001,7 @@ opacity: 1;
 
 
 .awan2{
-			background:url(../images/awan2.png) no-repeat;
+			background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/awan2.png) no-repeat;
 			position:absolute;
 			right:0;
 			top:0;
@@ -1045,7 +1045,7 @@ opacity: 1;
 
 
 .awan3{
-			background:url(../images/awan2.png) no-repeat;
+			background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/awan2.png) no-repeat;
 			position:absolute;
 			left:0;
 			top:0;
@@ -1084,7 +1084,7 @@ opacity: 1;
 
 
 .awan4{
-	background:url(../images/awan4.png) no-repeat;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/awan4.png) no-repeat;
 			position:absolute;
 			left:0;
 			top:0;
@@ -1168,7 +1168,7 @@ height:768px;
 
 
 .bg{
-	background:url(../images/bg.png) no-repeat;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/bg.png) no-repeat;
 	position:absolute;
 	height:100%;
 	width:100%;
@@ -1176,7 +1176,7 @@ height:768px;
 
 
 .bukit{
-	background:url(../images/bukit.png) repeat;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/bukit.png) repeat;
 	position:absolute;
 	bottom:0;
 	height:113px;
@@ -1184,7 +1184,7 @@ height:768px;
 	}
 
 .awanawan{
-	background:url(../images/awan.png); repeat;
+	background:url(https://raw.githubusercontent.com/tomtompil/madig_02/main/images/awan.png); repeat;
 	position:absolute;
 	bottom:0;
 	height:198px;
